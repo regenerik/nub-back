@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API by QuanThink</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .route {
+            background: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-left: 5px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+    <h1>📌 API - Administración by QuanThink</h1>
+    <p>Esta es una plantilla de API que debe ser modificada según las necesidades del proyecto. Abajo se listan las rutas funcionales. Es posible que algunas rutas necesiten Authorization en Headers al llamarse. Para obtener la Key, contacte con un administrador.</p>
+    
+    <div class="route">
+        <h3>📌 Ruta de Prueba</h3>
+        <p><strong>GET</strong> <code>/test_admin_bp</code></p>
+        <p>Respuesta de prueba para verificar que la API está funcionando.</p>
+    </div>
+    
+    <div class="route">
+        <h3>📌 Documentación</h3>
+        <p><strong>GET</strong> <code>/</code></p>
+        <p>Devuelve la documentación de la API. Exactamente donde estas parado ahora.</p>
+    </div>
+    
+    <div class="route">
+        <h3>📌 Crear Usuario</h3>
+        <p><strong>POST</strong> <code>/create_user</code></p>
+        <p>Crea un nuevo usuario en el sistema.</p>
+    </div>
+    
+    <div class="route">
+        <h3>📌 Iniciar Sesión</h3>
+        <p><strong>POST</strong> <code>/login</code></p>
+        <p>Genera un token de acceso para autenticación.</p>
+    </div>
+    
+    <div class="route">
+        <h3>📌 Obtener Usuarios</h3>
+        <p><strong>GET</strong> <code>/users</code> (Requiere Token)</p>
+        <p>Lista todos los usuarios registrados.</p>
+    </div>
+    
+    <div class="route">
+        <h3>📌 Actualizar Perfil</h3>
+        <p><strong>PUT</strong> <code>/update_profile</code></p>
+        <p>Modifica los datos de un usuario registrado.</p>
+    </div>
+    
+    <div class="route">
+        <h3>📌 Actualizar Imagen de Perfil</h3>
+        <p><strong>PUT</strong> <code>/update_profile_image</code></p>
+        <p>Cambia la imagen de perfil del usuario.</p>
+    </div>
+    
+    <div class="route">
+        <h3>📌 Cambiar Rol de Administrador</h3>
+        <p><strong>PUT</strong> <code>/update_admin</code></p>
+        <p>Asigna o revoca permisos de administrador a un usuario.</p>
+    </div>
+    
+    <div class="route">
+        <h3>📌 Obtener Usuario por número de identidad</h3>
+        <p><strong>GET</strong> <code>/get_user/&lt;dni&gt;</code></p>
+        <p>Busca y devuelve los datos de un usuario por su número de identidad.</p>
+    </div>
+</body>
+</html>

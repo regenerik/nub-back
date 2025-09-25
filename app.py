@@ -23,7 +23,7 @@ load_dotenv()
 app = Flask(__name__)
 
 # Configuración Socket.IO
-socketio = SocketIO(app, cors_allowed_origins="*", async_mode="eventlet")
+socketio = SocketIO(app, cors_allowed_origins="*", async_mode="gevent")
 init_socketio(socketio)
 
 # Extensiones
@@ -68,3 +68,4 @@ if __name__ == '__main__':
 
 #                 myenv\Scripts\activate       
 #                 waitress-serve --port=5000 app:app
+#para socket io:  python app.py
